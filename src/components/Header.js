@@ -1,6 +1,6 @@
 import React from "react";
-import "../components/Header.scss";
 import { NavLink } from "react-router-dom";
+import "../components/Header.scss";
 
 function Header() {
   return (
@@ -17,14 +17,19 @@ function Header() {
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to="/works"
-            className={({ isActive }) =>
-              isActive ? "header__navbar-active" : "header__navbar-inactive"
-            }
-          >
+          <a href="#projects" className="header__navbar-inactive">
+            Projets
+          </a>
+        </li>
+        <li>
+          <a href="#apropos" className="header__navbar-inactive">
             A propos
-          </NavLink>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" className="header__navbar-inactive">
+            Contact
+          </a>
         </li>
       </ul>
     </nav>
