@@ -1,0 +1,51 @@
+@import "./var";
+.contact {
+  width: 100%;
+}
+.contact__title {
+  margin: 20px 0 20px 0;
+  padding: 20px;
+  background-color: $special-color;
+  color: $second-font-color;
+  width: 100%;
+  text-align: center;
+}
+.contact__container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.contact__form {
+  padding: 40px;
+  background-color: rgb(193, 192, 192);
+  border-radius: 25px;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  &-label {
+    font-size: 16px;
+  }
+  &-text {
+    font-family: $main-font;
+    font-size: 16px;
+    width: 100%;
+    border: 0px;
+    background-color: $main-background-color;
+    border-radius: 5px;
+  }
+  &-submit {
+    width: 20%;
+    background-color: $special-color;
+    border: none;
+    border-radius: 5px;
+    font-family: $main-font;
+    font-weight: 500;
+    color: $second-font-color;
+    padding: 3px;
+    font-size: 16px;
+  }
+}

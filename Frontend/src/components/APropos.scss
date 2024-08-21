@@ -1,0 +1,21 @@
+@import "../components/var";
+
+.a-propos {
+  display: flex;
+  background-color: $main-background-color;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    background-color: $special-color;
+    color: $second-font-color;
+    width: 100%;
+    text-align: center;
+  }
+  &__text {
+    font-family: $main-font;
+    color: $main-font-color;
+    width: 70%;
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "title": "Booki",
+    "picture": "/booki_screen.png",
+    "details": "/booki.md"
+  },
+  {
+    "id": "2",
+    "title": "Sophie Bluel",
+    "picture": "/sophiebluel_screen.png",
+    "details": "/sophiebluel.md"
+  },
+  {
+    "id": "3",
+    "title": "Nina Carducci",
+    "picture": "/ninacarducci_screen.png",
+    "details": "/ninacarducci.md"
+  },
+  {
+    "id": "4",
+    "title": "Kasa",
+    "picture": "/kasa_screen.png",
+    "details": "/kasa.md"
+  },
+  {
+    "id": "5",
+    "title": "Mon Vieux Grimoire",
+    "picture": "/monvieuxgrimoire_screen.png",
+    "details": "/monvieuxgrimoire.md"
+  }
+]

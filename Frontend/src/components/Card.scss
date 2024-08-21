@@ -1,0 +1,114 @@
+@import "../components/var";
+
+$card-gap: 55px;
+$card-title-background: $special-color;
+$card-title-text-size: 18px;
+$card-title-text-weight: 700;
+
+//ul.card {
+//    margin:0px;
+//  padding:0px
+//}
+.card__title {
+  margin: 20px 0 20px 0;
+  padding: 20px;
+  background-color: $special-color;
+  color: $second-font-color;
+  width: 100%;
+  text-align: center;
+}
+.card__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $card-gap;
+  list-style: none;
+  padding: 45px;
+
+  &-item {
+    position: relative;
+    overflow: hidden;
+    padding-top: 60%;
+    padding-bottom: 0%;
+    &:hover .card__details {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &-img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &-container {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: $card-title-background;
+    background-color: transparent;
+  }
+
+  &-title {
+    width: 100%;
+    height: 20%;
+    background-color: $card-title-background;
+    color: $second-font-color;
+    font-size: $card-title-text-size;
+    font-weight: $card-title-text-weight;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+    opacity: 80%;
+  }
+  &__details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 400;
+    background-color: $special-color;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    &.is-visible {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    padding: 0;
+    margin: 22px 22px 22px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    &__item {
+      height: 255px;
+      padding: 0;
+    }
+
+    &__img {
+      height: 255px;
+    }
+  }
+}
