@@ -1,6 +1,8 @@
 @import "../components/_var.scss";
 hr {
   width: 50%;
+  color: $special-color;
+  border-color: $special-color;
 }
 .header {
   display: flex;
@@ -15,21 +17,29 @@ hr {
     text-decoration: none;
     display: flex;
     justify-content: space-between;
-    gap: 100px;
+    gap: 20px;
+    & li {
+      width: 90px;
+      text-align: center;
+    }
     &-active {
       font-size: 15px;
       font-family: $main-font;
       text-decoration: none;
-      color: $main-font-color;
-      transition: font-weight 0.3s ease;
-      font-weight: 600;
+      color: $special-color;
+      border: 1px solid $special-color;
+      border-radius: 0 10px 0 10px;
+      padding: 5px 10px 5px 10px;
+      /*       transition: font-weight 0.3s ease;
+      font-weight: 600; */
     }
     &-inactive {
       font-size: 15px;
       font-family: $main-font;
       text-decoration: none;
       color: $main-font-color;
-      font-weight: 400;
+      /*       font-weight: 400;
+ */
     }
   }
 }

@@ -5,7 +5,6 @@ import "../components/Header.scss";
 function Header() {
   return (
     <div>
-      <hr />
       <nav className="header">
         <ul className="header__navbar">
           <li>
