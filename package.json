@@ -2,7 +2,7 @@
   "name": "vanessa-viaud",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vanessaviaud.github.io/portfolio/",
+  "homepage": ".",
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
