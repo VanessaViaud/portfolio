@@ -32,11 +32,12 @@ $card-title-text-weight: 700;
     &-content {
       font-family: $main-font;
       color: $main-font-color;
-      width: 70%;
+      width: 60%;
       font-weight: 100;
       gap: 15px;
       letter-spacing: 0.05em;
       text-align: justify;
+      line-height: 22px;
     }
   }
   &__content {
