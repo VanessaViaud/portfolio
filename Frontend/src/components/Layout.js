@@ -8,9 +8,10 @@ function Layout({ children }) {
   return (
     <div>
       <div className="head">
-        <Title />
         <Header />
       </div>
+      <Title />
+
       <main>{children}</main>
       {/* <Footer /> */}
     </div>

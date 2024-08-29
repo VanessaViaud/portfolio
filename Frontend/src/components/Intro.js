@@ -1,12 +1,12 @@
 import React from "react";
 import "../components/Intro.scss";
-import Front from "../assets/DevFront.png";
-import Tools from "../assets/OutilsBackend.png";
+import Front from "../assets/DevFront2.png";
+import Tools from "../assets/OutilsBackend2.png";
 
 function Intro() {
   return (
     <div className="intro">
-      <h2 className="intro__title">Mes Compétences</h2>
+      <h2 className="intro__title">MES COMPÉTENCES</h2>
       <div className="intro__content">
         <div className="intro__skills">
           <h2 className="intro__skills-subtitle">Développement Frontend</h2>

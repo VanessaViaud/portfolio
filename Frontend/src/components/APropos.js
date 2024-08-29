@@ -3,17 +3,21 @@ import "../components/APropos.scss";
 function APropos() {
   return (
     <div className="a-propos">
-      <h2 className="a-propos__title">À Propos</h2>
+      <h2 className="a-propos__title">À PROPOS</h2>
       <p className="a-propos__text">
-        Auparavant juriste, j'ai décidée de changer de voie, changer de vie, et
-        surtout me lancer un nouveau challenge et m'orienter vers un domaine
-        dynamique ! Développer un site web, c'est un peu comme rédiger un
-        document juridique, il faut connaître le langage approprié, se mettre
-        continuellement à jour des nouveautés, et mettre le tout en forme. Bref,
-        j'ai vu l'opportunité de me servir de mes compétences de base acquise
-        après plus de quinze années d'expériences tout en me jetant dans le vide
-        et inconnu de ce nouveau monde. Curieuse et motivée, j'ai hâte
-        d'apprendre encore des tonnes et des tonnes de choses !
+        Anciennement juriste, j'ai choisi de réorienter ma carrière et de
+        relever un nouveau défi en me tournant vers un secteur dynamique et en
+        pleine évolution. Développer un site web, c'est comparable à la
+        rédaction d'un document juridique : cela exige une maîtrise du langage,
+        une mise à jour constante des connaissances, et une attention
+        particulière à la présentation.
+      </p>
+      <p className="a-propos__text">
+        Après plus de quinze ans d'expérience, j'ai vu dans cette transition
+        l'opportunité de valoriser mes compétences tout en explorant un domaine
+        nouveau et stimulant. Curieuse et déterminée, je suis enthousiaste à
+        l'idée de continuer à apprendre et à développer mes compétences dans ce
+        nouvel univers.
       </p>
     </div>
   );

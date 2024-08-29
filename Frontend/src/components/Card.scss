@@ -2,100 +2,124 @@
 
 $card-gap: 55px;
 $card-title-background: $special-color;
-$card-title-text-size: 18px;
+$card-title-text-size: 15px;
 $card-title-text-weight: 700;
 
 //ul.card {
 //    margin:0px;
 //  padding:0px
 //}
-.card__title {
-  margin: 0px;
-  padding: 20px;
-  background-color: $main-background-color;
-  color: $second-font-color;
-  width: 100%;
-  text-align: center;
-  border: 1px solid $special-color;
-  border-radius: 0 20px 0 20px;
-}
-.card__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: $card-gap;
-  list-style: none;
-  padding: 45px;
-
-  &-item {
-    position: relative;
-    overflow: hidden;
-    padding-top: 60%;
-    padding-bottom: 0%;
-    &:hover .card__details {
-      opacity: 1;
-      visibility: visible;
-    }
-  }
-
-  &-img {
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-  }
-
-  &-container {
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    background: $card-title-background;
-    background-color: transparent;
-  }
-
-  &-title {
-    width: 100%;
-    height: 20%;
-    background-color: $card-title-background;
-    color: $second-font-color;
-    font-size: $card-title-text-size;
-    font-weight: $card-title-text-weight;
-    display: flex;
-    align-items: center;
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  &__title {
     margin: 0px;
-    justify-content: center;
-    position: relative;
-    z-index: 3;
-    opacity: 80%;
-  }
-  &__details {
-    position: absolute;
-    top: 0;
-    left: 0;
+    padding: 20px;
+    background-color: $main-background-color;
+    color: $main-font-color;
     width: 100%;
-    height: 100%;
-    z-index: 400;
-    background-color: $special-color;
+    text-align: center;
+    font-family: $main-font;
+    letter-spacing: 0.3em;
+    /*   border: 1px solid $special-color;
+  border-radius: 0 20px 0 20px; */
+  }
+  &__intro {
+    width: 100%;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    &-content {
+      font-family: $main-font;
+      color: $main-font-color;
+      width: 70%;
+      font-weight: 100;
+      gap: 15px;
+      letter-spacing: 0.05em;
+      text-align: justify;
+    }
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $card-gap;
+    list-style: none;
+    padding: 45px;
 
-    &.is-visible {
-      opacity: 1;
-      visibility: visible;
+    &-item {
+      position: relative;
+      overflow: hidden;
+      padding-top: 60%;
+      padding-bottom: 0%;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+      &:hover .card__details {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    &-img {
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+    &-container {
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      background: $card-title-background;
+      background-color: transparent;
+    }
+
+    &-title {
+      width: 100%;
+      height: 20%;
+      background-color: $card-title-background;
+      color: white;
+      font-size: $card-title-text-size;
+      font-weight: $card-title-text-weight;
+      display: flex;
+      align-items: center;
+      margin: 0px;
+      justify-content: center;
+      position: relative;
+      z-index: 3;
+      opacity: 80%;
+      font-family: $main-font;
+      letter-spacing: 0.1em;
+    }
+    &__details {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 400;
+      background-color: $main-background-color;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+
+      &.is-visible {
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 }
-
 @media screen and (max-width: 375px) {
   .card {
     padding: 0;

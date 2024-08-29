@@ -10,7 +10,9 @@ function Home() {
       <div id="apropos">
         <APropos />
       </div>
-      <Intro />
+      <div id="skills">
+        <Intro />
+      </div>
       <div id="projects">
         <Card />
       </div>

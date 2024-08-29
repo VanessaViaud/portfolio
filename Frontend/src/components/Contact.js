@@ -30,7 +30,7 @@ function ContactForm() {
 
   return (
     <div className="contact">
-      <h2 className="contact__title">Contact</h2>
+      <h2 className="contact__title">CONTACT</h2>
       <div className="contact__container">
         <form className="contact__form" onSubmit={handleSubmit}>
           <label className="contact__form-label">Nom</label>

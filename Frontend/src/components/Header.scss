@@ -7,28 +7,31 @@ hr {
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  height: 40px;
+  height: 80px;
   background-color: $main-background-color;
+  &__logo {
+    height: 70px;
+  }
   &__navbar {
     padding-inline-start: 0px;
     list-style: none;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
+    margin-right: 30px;
     gap: 20px;
     & li {
-      width: 90px;
+      width: 110px;
       text-align: center;
+      letter-spacing: 0.05em;
     }
     &-active {
       font-size: 15px;
       font-family: $main-font;
       text-decoration: none;
       color: $special-color;
-      border: 1px solid $special-color;
-      border-radius: 0 10px 0 10px;
       padding: 5px 10px 5px 10px;
       /*       transition: font-weight 0.3s ease;
       font-weight: 600; */

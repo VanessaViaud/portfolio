@@ -1,22 +1,35 @@
 @import "../src/components/_var.scss";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
+@font-face {
+  font-family: "main-font";
+  src: url("./assets/now.regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Bellaza", sans-serif;
+}
 main {
   width: 100%;
+
   margin: 0px;
 }
 body {
   background-color: $main-background-color;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Bellaza", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  border: 1px solid $special-color;
   margin: 30px;
-  border-radius: 0 25px 0 25px;
 }
 
 code {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Bellaza", sans-serif;
+}
+
+h2 {
+  font-weight: 400;
 }
