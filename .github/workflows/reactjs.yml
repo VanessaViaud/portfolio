@@ -34,7 +34,6 @@ jobs:
         uses: actions/checkout@v4
       - name: Detect package manager
         id: detect-package-manager
-        working-directory: ./Frontend
         run: |
           if [ -f " ${{ github.workspace }}/package.json" ]; then
             echo "manager=npm" >> $GITHUB_OUTPUT
