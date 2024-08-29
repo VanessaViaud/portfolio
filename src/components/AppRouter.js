@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "../pages/Home";
 // import Works from "../pages/Works";
@@ -9,7 +9,7 @@ function AppRouter() {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/*" element={<Home />} />
         </Routes>
       </Layout>
     </Router>
