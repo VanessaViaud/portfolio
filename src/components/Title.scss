@@ -1,16 +1,17 @@
 @import "./var";
+
 .presentation {
   margin-top: 200px;
   margin-bottom: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   &__title {
     background-color: $main-background-color;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    align-items: flex-start;
+    text-align: center;
+    gap: 50px;
+    align-items: center;
     margin: 0px;
     &__h {
       margin: Opx;
@@ -18,9 +19,7 @@
       font-size: 60px;
       margin-block-start: 0px;
     }
-    &__logo {
-      max-width: 500px;
-    }
+
     &__text {
       margin-block-start: 0px;
       padding-left: 15px;
@@ -30,8 +29,18 @@
     }
   }
   &__portrait {
-    width: 350px;
-    border-radius: 50%;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    &-img {
+      width: 350px;
+      border-radius: 50%;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+  }
+  &__icon {
+    display: flex;
+    gap: 40px;
+  }
+  &__icons {
+    color: black;
   }
 }

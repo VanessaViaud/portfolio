@@ -1,24 +1,44 @@
 import React from "react";
 import "../components/Title.scss";
 import portrait from "../assets/PortraitVV.jpg";
-import logo from "../assets/logo3_vv.png";
+import logo from "../assets/logo4_vv.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 function Title() {
   return (
     <div className="presentation">
       <div className="presentation__title">
-        {/*         <h1 className="presentation__title__h">Vanessa Viaud,</h1>
-         */}{" "}
         <img
           className="presentation__title__logo"
           src={logo}
           alt="Vanessa Viaud"
         />
-        {/*         <p className="presentation__title__text">développeuse front-end.</p>
-         */}{" "}
+        <div className="presentation__icon">
+          <a href="https://github.com/VanessaViaud">
+            <FontAwesomeIcon
+              className="presentation__icons"
+              icon={faGithub}
+              size="2x"
+            />
+          </a>
+          <FontAwesomeIcon
+            className="presentation__icons"
+            icon={faLinkedin}
+            size="2x"
+          />
+          <a href="mailto:contactvvportfolio?subject=Contact from portfolio">
+            <FontAwesomeIcon
+              className="presentation__icons"
+              icon={faEnvelope}
+              size="2x"
+            />
+          </a>
+        </div>
       </div>
-      <div>
+      <div className="presentation__portrait">
         <img
-          className="presentation__portrait"
+          className="presentation__portrait-img"
           src={portrait}
           alt="Portrait de Vanessa Viaud"
         />
