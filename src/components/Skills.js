@@ -1,5 +1,5 @@
 import React from "react";
-import "../components/Intro.scss";
+import "../components/Skills.scss";
 import Front from "../assets/DevFront2.png";
 import Tools from "../assets/OutilsBackend2.png";
 
