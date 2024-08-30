@@ -24,6 +24,9 @@ body.modal-open {
   max-height: 80vh;
   overflow-y: auto;
   position: relative;
+  letter-spacing: 0.08em;
+  text-align: justify;
+  line-height: 20px;
 }
 
 .modal-close {
@@ -34,4 +37,5 @@ body.modal-open {
   border: none;
   font-size: 24px;
   cursor: pointer;
+  color: $second-logo-color;
 }

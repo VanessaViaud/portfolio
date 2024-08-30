@@ -3,7 +3,7 @@ import "../components/Intro.scss";
 import Front from "../assets/DevFront2.png";
 import Tools from "../assets/OutilsBackend2.png";
 
-function Intro() {
+function Skills() {
   return (
     <div className="intro">
       <h2 className="intro__title">MES COMPÉTENCES</h2>
@@ -29,4 +29,4 @@ function Intro() {
   );
 }
 
-export default Intro;
+export default Skills;

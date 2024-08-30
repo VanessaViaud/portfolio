@@ -1,5 +1,5 @@
 import React from "react";
-import Intro from "../components/Intro.js";
+import Skills from "../components/Skills.js";
 import Card from "../components/Card.js";
 import APropos from "../components/APropos.js";
 import Title from "../components/Title.js";
@@ -14,7 +14,7 @@ function Home() {
         <APropos />
       </div>
       <div id="skills">
-        <Intro />
+        <Skills />
       </div>
       <div id="projects">
         <Card />

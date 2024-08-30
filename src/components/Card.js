@@ -39,7 +39,7 @@ function Card() {
           <li
             className="card__content-item"
             key={work.id}
-            onClick={() => handleClick(index)} // Appeler handleClick au clic
+            onClick={() => handleClick(index)}
           >
             <img
               className="card__content-img"
