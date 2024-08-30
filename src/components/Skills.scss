@@ -39,3 +39,49 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .intro {
+    padding: 50px 0 0 0;
+    gap: 5px;
+    &__title {
+      padding: 0px;
+      width: 100%;
+      font-size: 18px;
+    }
+    &__content {
+      justify-content: center;
+      width: 60%;
+    }
+    &__skills {
+      &-img {
+        height: 50%;
+      }
+      &-subtitle {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .intro {
+    padding: 50px 0 0 0;
+    gap: 5px;
+    &__title {
+      padding-bottom: 0px;
+      width: 100%;
+      font-size: 15px;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 60%;
+    }
+    &__skills {
+      &-subtitle {
+        font-size: 14px;
+      }
+    }
+  }
+}

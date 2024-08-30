@@ -25,5 +25,31 @@
     gap: 15px;
     letter-spacing: 0.05em;
     text-align: justify;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .a-propos {
+    padding: 50px 0 0 0;
+    &__title {
+      font-size: 18px;
+    }
+    &__text {
+      width: 80%;
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .a-propos {
+    padding: 20px 0 0 0;
+    &__title {
+      font-size: 15px;
+    }
+    &__text {
+      width: 90%;
+      font-size: 12px;
+      line-height: 17px;
+    }
   }
 }

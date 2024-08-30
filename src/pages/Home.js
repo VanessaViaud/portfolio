@@ -13,10 +13,10 @@ function Home() {
       <div id="apropos">
         <APropos />
       </div>
-      <div id="skills">
+      <div id="competences">
         <Skills />
       </div>
-      <div id="projects">
+      <div id="realisations">
         <Card />
       </div>
     </div>

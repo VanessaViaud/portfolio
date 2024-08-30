@@ -21,7 +21,7 @@ function Skills() {
           <img
             className="intro__skills-img"
             src={Tools}
-            alt="Liste des compétences en développement Frontend"
+            alt="Liste des compétences en backend et outils utilisés"
           />
         </div>
       </div>

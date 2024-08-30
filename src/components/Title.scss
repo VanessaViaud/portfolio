@@ -13,20 +13,6 @@
     gap: 50px;
     align-items: center;
     margin: 0px;
-    &__h {
-      margin: Opx;
-      color: $second-font-color;
-      font-size: 60px;
-      margin-block-start: 0px;
-    }
-
-    &__text {
-      margin-block-start: 0px;
-      padding-left: 15px;
-      font-family: $main-font;
-      color: $main-font-color;
-      font-size: 30px;
-    }
   }
   &__portrait {
     text-align: center;
@@ -42,5 +28,67 @@
   }
   &__icons {
     color: black;
+  }
+}
+@media screen and (max-width: 768px) {
+  .presentation {
+    margin-top: 150px;
+    margin-bottom: 0;
+    &__title {
+      gap: 30px;
+      &__logo {
+        max-width: 350px;
+      }
+    }
+    &__portrait {
+      text-align: center;
+      &-img {
+        width: 200px;
+        border-radius: 50%;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      }
+    }
+    &__icon {
+      display: flex;
+      gap: 40px;
+    }
+    &__icons {
+      color: black;
+      height: 20px;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .presentation {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 0;
+    &__title {
+      gap: 30px;
+      &__logo {
+        max-width: 200px;
+      }
+    }
+    &__portrait {
+      text-align: center;
+      &-img {
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      }
+    }
+    &__icon {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    & a {
+      display: flex;
+      align-items: center;
+    }
+    &__icons {
+      color: black;
+      height: 13px;
+    }
   }
 }

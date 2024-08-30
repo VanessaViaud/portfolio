@@ -1,4 +1,5 @@
 @import "../components/_var.scss";
+
 .header {
   display: flex;
   flex-direction: row;
@@ -6,47 +7,96 @@
   align-items: center;
   height: 80px;
   background-color: $main-background-color;
+
   &__logo {
     height: 70px;
   }
+
   &__navbar {
     padding-inline-start: 0px;
     list-style: none;
-    text-decoration: none;
     display: flex;
     justify-content: space-between;
     margin-right: 30px;
     gap: 20px;
-    & li {
+
+    li {
       width: 110px;
       text-align: center;
       letter-spacing: 0.05em;
     }
+
     &-active {
       font-size: 16px;
       font-family: $main-font;
       text-decoration: none;
       color: $special-color;
-      padding: 5px 10px 5px 10px;
-      /*       transition: font-weight 0.3s ease;
-      font-weight: 600; */
+      padding: 5px 10px;
     }
+
     &-inactive {
       font-size: 16px;
       font-family: $main-font;
       text-decoration: none;
       color: $main-font-color;
-      /*       font-weight: 400;
- */
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 50px;
+    &__logo {
+      height: 40px;
+    }
+    &__navbar {
+      gap: 10px;
+    }
+  }
+}
+.burger {
+  display: none;
+  cursor: pointer;
+}
+/* Media query pour les écrans de 375px ou moins */
 @media screen and (max-width: 375px) {
   .header {
-    margin: 20px 20px 30px 20px;
-    height: auto;
-    &__navbar {
-      gap: 26px;
+    height: 40px;
+
+    &__logo {
+      height: 30px;
     }
+
+    &__navbar {
+      display: none; /* Cacher le menu par défaut */
+      flex-direction: column;
+      position: absolute;
+      top: 40px; /* Ajusté pour s'aligner avec la taille réduite du header */
+      left: 0;
+      width: 100%;
+      background-color: $main-background-color;
+      padding: 10px;
+      gap: 10px;
+
+      li {
+        width: 100%; /* Chaque lien occupe toute la largeur */
+        padding: 0;
+      }
+      &-active,
+      &-inactive {
+        font-size: 14px;
+      }
+      &.active {
+        display: flex; /* Afficher le menu lorsque le burger est cliqué */
+        margin-top: 0;
+        gap: 5px;
+      }
+    }
+  }
+
+  .burger {
+    display: block; /* Montrer l'icône du menu burger */
+    cursor: pointer;
+    font-size: 24px; /* Taille de l'icône du menu burger */
   }
 }

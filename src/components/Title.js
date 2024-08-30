@@ -20,18 +20,21 @@ function Title() {
               className="presentation__icons"
               icon={faGithub}
               size="2x"
+              aria-label="Lien vers Github Vanessa Viaud"
             />
           </a>
           <FontAwesomeIcon
             className="presentation__icons"
             icon={faLinkedin}
             size="2x"
+            aria-label="Lien vers Linkedin Vanessa Viaud"
           />
           <a href="mailto:contactvvportfolio?subject=Contact from portfolio">
             <FontAwesomeIcon
               className="presentation__icons"
               icon={faEnvelope}
               size="2x"
+              aria-label="Envoyer un email à Vanessa Viaud"
             />
           </a>
         </div>

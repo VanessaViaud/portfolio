@@ -5,10 +5,6 @@ $card-title-background: $special-color;
 $card-title-text-size: 15px;
 $card-title-text-weight: 700;
 
-//ul.card {
-//    margin:0px;
-//  padding:0px
-//}
 .card {
   display: flex;
   justify-content: center;
@@ -22,8 +18,6 @@ $card-title-text-weight: 700;
     text-align: center;
     font-family: $main-font;
     letter-spacing: 0.3em;
-    /*   border: 1px solid $special-color;
-  border-radius: 0 20px 0 20px; */
   }
   &__intro {
     width: 100%;
@@ -37,7 +31,7 @@ $card-title-text-weight: 700;
       gap: 15px;
       letter-spacing: 0.05em;
       text-align: justify;
-      line-height: 22px;
+      line-height: 20px;
     }
   }
   &__content {
@@ -53,11 +47,6 @@ $card-title-text-weight: 700;
       padding-top: 60%;
       padding-bottom: 0%;
       box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-
-      &:hover .card__details {
-        opacity: 1;
-        visibility: visible;
-      }
     }
 
     &-img {
@@ -110,32 +99,52 @@ $card-title-text-weight: 700;
       background-color: $main-background-color;
       justify-content: center;
       align-items: center;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.3s ease, visibility 0.3s ease;
-
-      &.is-visible {
-        opacity: 1;
-        visibility: visible;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .card {
+    margin-top: -50px;
+    &__title {
+      font-size: 18px;
+    }
+    &__intro {
+      &-content {
+        width: 80%;
+        font-size: 14px;
+      }
+    }
+    &__content {
+      padding: 20px;
+      gap: 20px;
+      &-title {
+        font-size: 14px;
       }
     }
   }
 }
 @media screen and (max-width: 375px) {
   .card {
-    padding: 0;
-    margin: 22px 22px 22px 22px;
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-
-    &__item {
-      height: 255px;
-      padding: 0;
+    margin-top: 0px;
+    &__title {
+      font-size: 15px;
     }
+    &__intro {
+      &-content {
+        width: 90%;
+        font-size: 12px;
+        line-height: 17px;
+      }
+    }
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr;
 
-    &__img {
-      height: 255px;
+      padding: 20px;
+
+      &-title {
+        font-size: 12px;
+      }
     }
   }
 }

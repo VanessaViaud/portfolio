@@ -39,3 +39,29 @@ body.modal-open {
   cursor: pointer;
   color: $second-logo-color;
 }
+@media screen and (max-width: 768px) {
+  .modal-content {
+    font-size: small;
+    line-height: 17px;
+    max-width: 600px;
+    width: 90%;
+  }
+
+  .modal-close {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .modal-content {
+    font-size: small;
+    line-height: 14px;
+    max-width: 350px;
+    width: 75%;
+  }
+
+  .modal-close {
+    font-size: 16px;
+    cursor: pointer;
+    color: $second-logo-color;
+  }
+}

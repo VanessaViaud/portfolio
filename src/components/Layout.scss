@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Pour s'assurer qu'il reste au-dessus des autres éléments */
-  background-color: white; /* Ajoutez un fond pour éviter les superpositions avec le contenu en dessous */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajoutez une ombre pour la séparation visuelle */
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
