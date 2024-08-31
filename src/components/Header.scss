@@ -43,7 +43,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $tablet) {
   .header {
     height: 50px;
     &__logo {
@@ -58,8 +58,7 @@
   display: none;
   cursor: pointer;
 }
-/* Media query pour les écrans de 375px ou moins */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: $mobileL) {
   .header {
     height: 40px;
 
@@ -68,10 +67,10 @@
     }
 
     &__navbar {
-      display: none; /* Cacher le menu par défaut */
+      display: none;
       flex-direction: column;
       position: absolute;
-      top: 40px; /* Ajusté pour s'aligner avec la taille réduite du header */
+      top: 40px;
       left: 0;
       width: 100%;
       background-color: $main-background-color;
@@ -79,7 +78,7 @@
       gap: 10px;
 
       li {
-        width: 100%; /* Chaque lien occupe toute la largeur */
+        width: 100%;
         padding: 0;
       }
       &-active,
@@ -87,7 +86,7 @@
         font-size: 14px;
       }
       &.active {
-        display: flex; /* Afficher le menu lorsque le burger est cliqué */
+        display: flex;
         margin-top: 0;
         gap: 5px;
       }
@@ -95,8 +94,8 @@
   }
 
   .burger {
-    display: block; /* Montrer l'icône du menu burger */
+    display: block;
     cursor: pointer;
-    font-size: 24px; /* Taille de l'icône du menu burger */
+    font-size: 24px;
   }
 }

@@ -39,7 +39,7 @@ body.modal-open {
   cursor: pointer;
   color: $second-logo-color;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $tablet) {
   .modal-content {
     font-size: small;
     line-height: 17px;
@@ -51,7 +51,7 @@ body.modal-open {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: $mobileL) {
   .modal-content {
     font-size: small;
     line-height: 14px;

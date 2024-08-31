@@ -28,7 +28,7 @@
     line-height: 20px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $tablet) {
   .a-propos {
     padding: 50px 0 0 0;
     &__title {
@@ -40,7 +40,7 @@
     }
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: $mobileL) {
   .a-propos {
     padding: 20px 0 0 0;
     &__title {

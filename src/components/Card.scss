@@ -102,7 +102,7 @@ $card-title-text-weight: 700;
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $tablet) {
   .card {
     margin-top: -50px;
     &__title {
@@ -123,7 +123,7 @@ $card-title-text-weight: 700;
     }
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: $mobileL) {
   .card {
     margin-top: 0px;
     &__title {

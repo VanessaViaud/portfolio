@@ -21,7 +21,7 @@ a {
 p {
   letter-spacing: 0.05em;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: $mobileL) {
   .footer {
     height: 50px;
     gap: 60px;
