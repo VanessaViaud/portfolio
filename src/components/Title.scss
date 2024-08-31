@@ -60,27 +60,24 @@
 }
 @media screen and (max-width: $mobileL) {
   .presentation {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-top: 80px;
     margin-bottom: 0;
     &__title {
       gap: 30px;
       &__logo {
-        max-width: 200px;
+        max-width: 300px;
       }
     }
     &__portrait {
-      text-align: center;
-      &-img {
-        width: 100px;
-        border-radius: 50%;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-      }
+      display: none;
     }
     &__icon {
       display: flex;
       align-items: center;
-      gap: 40px;
+      gap: 60px;
     }
     & a {
       display: flex;
@@ -88,7 +85,7 @@
     }
     &__icons {
       color: black;
-      height: 13px;
+      height: 20px;
     }
   }
 }
