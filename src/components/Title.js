@@ -9,6 +9,8 @@ function Title() {
   return (
     <div className="presentation">
       <div className="presentation__title">
+        <h1>VANESSA VIAUD</h1>
+        <h2>développeuse web</h2>
         <img
           className="presentation__title__logo"
           src={logo}

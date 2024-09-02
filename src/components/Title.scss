@@ -25,9 +25,21 @@
   &__icon {
     display: flex;
     gap: 40px;
+    &:hover {
+      color: $second-logo-color;
+    }
   }
   &__icons {
     color: black;
+    &:hover {
+      color: $second-logo-color;
+    }
+  }
+  & a,
+  svg {
+    &:hover {
+      color: $second-logo-color;
+    }
   }
 }
 @media screen and (max-width: $tablet) {
@@ -79,7 +91,8 @@
       align-items: center;
       gap: 60px;
     }
-    & a {
+    & a,
+    svg {
       display: flex;
       align-items: center;
     }
