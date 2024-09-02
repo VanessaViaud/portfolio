@@ -48,7 +48,16 @@ function Header() {
 
   return (
     <div className="header">
-      <img className="header__logo" src={icone} alt="Logo Vanessa Viaud" />
+      <NavLink
+        to="/"
+        aria-label="Vers l'accueil"
+        onClick={scrollToTop}
+        className={({ isActive }) =>
+          isActive ? "header__navbar-active" : "header__navbar-inactive"
+        }
+      >
+        <img className="header__logo" src={icone} alt="Logo Vanessa Viaud" />
+      </NavLink>
       <nav>
         <ul className={`header__navbar ${isOpen ? "active" : ""}`}>
           <li>
