@@ -10,7 +10,7 @@
     padding: 20px;
     background-color: $main-background-color;
     color: $second-font-color;
-    width: 100%;
+    width: 80%;
     text-align: center;
     font-family: $main-font;
     letter-spacing: 0.3em;
@@ -45,7 +45,6 @@
     gap: 5px;
     &__title {
       padding: 0px;
-      width: 100%;
       font-size: 18px;
     }
     &__content {

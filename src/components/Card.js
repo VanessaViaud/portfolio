@@ -22,8 +22,9 @@ function Card() {
 
   return (
     <div className="card">
-      <h2 className="card__title">MES RÉALISATIONS</h2>
       <div className="card__intro">
+        <h2 className="card__title">MES RÉALISATIONS</h2>
+
         <p className="card__intro-content">
           Voici un aperçu des projets que j'ai réalisés dans le cadre de ma
           formation de développeuse web chez OpenClassrooms. Cette expérience
