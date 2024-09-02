@@ -61,7 +61,16 @@
     }
   }
 }
-
+@media screen and (max-width: 667px) {
+  .intro {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 40%;
+    }
+  }
+}
 @media screen and (max-width: $mobileL) {
   .intro {
     padding: 50px 0 0 0;

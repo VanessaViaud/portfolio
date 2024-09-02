@@ -125,6 +125,11 @@ $card-title-text-weight: 700;
     }
   }
 }
+@media screen and (max-width: 667px) {
+  .card {
+    margin-top: 0px;
+  }
+}
 @media screen and (max-width: $mobileL) {
   .card {
     margin-top: 0px;
