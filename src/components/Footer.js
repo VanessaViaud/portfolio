@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import "../components/Footer.scss";
+/* import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+ */ import "../components/Footer.scss";
 import Mentions from "./Mentions";
 
 function Footer() {
@@ -20,10 +20,12 @@ function Footer() {
         <a href="https://github.com/VanessaViaud">
           <FontAwesomeIcon icon={faGithub} size="1x" />
         </a>
-        <FontAwesomeIcon icon={faLinkedin} size="1x" />
-        <a href="mailto:contactvvportfolio?subject=Contact from portfolio">
-          <FontAwesomeIcon icon={faEnvelope} size="1x" />
+        <a href="https://www.linkedin.com/in/vanessa-viaud-nantes/">
+          <FontAwesomeIcon icon={faLinkedin} size="1x" />
         </a>
+        {/*         <a href="mailto:?subject=Contact from portfolio">
+          <FontAwesomeIcon icon={faEnvelope} size="1x" />
+        </a> */}
       </div>
       <p onClick={openMentions} style={{ cursor: "pointer" }}>
         Mentions Légales

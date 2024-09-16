@@ -105,7 +105,7 @@ function Header() {
           <li>
             <a
               aria-label="Cliquez pour télécharger le CV"
-              href="./CV_Vanessa_Viaud.pdf"
+              href="./CV_Vanessa_viaud_sept.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="header__navbar-inactive"
